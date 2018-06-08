@@ -1,0 +1,14 @@
+.text-align-center{
+    text-align: center;
+}
+table{
+     margin: 20px 450px;
+     border-collapse: collapse;
+    width: 30%;
+}
+table,th,td{
+     border: 1px solid black;
+}
+.select-option{
+    margin-left: 30px;
+}

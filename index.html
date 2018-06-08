@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TaskManager</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1 class="text-align-center">Task Manager</h1>
+    <div class="text-align-center">
+        <input type="text" placeholder="Title" id="titleInput">
+        <input type="date" placeholder="Due Date" id="dueDateInput">
+        <button onclick="handlers.addTask()">Add</button>
+        <select id="filterInput" onchange="handlers.filterTasks()" class="select-option">
+            <option value="All">All</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+        </select>
+    </div>
+   
+    <div>
+        <table id="taskTable">
+           
+        </table>
+    </div>
+    <div class="text-align-center">
+        <button onclick="handlers.deleteTask()">Delete</button>
+        <button onclick="handlers.changeStatus()">Change Status</button>
+        
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
